@@ -31,13 +31,14 @@
 }
 
 .form1_text {
+  width: 330px;
+  text-align: end;
   margin: 10px 0;
   color: gray;
-  /* padding-left: 212px; */
-  padding: 7px 0 7px 212px;
+  /* padding: 7px 0 7px 219px; */
 }
 
-a {
+.silka {
   text-decoration: none;
 }
 
@@ -51,7 +52,7 @@ a {
   font-weight: bold;
 }
 .form1_btn2 {
-  width: 100%;
+  width: 312px;
   padding: 10px;
   border: 1px solid grey;
   border-radius: 50px;
@@ -59,6 +60,8 @@ a {
   font-weight: bold;
   font-size: 17px;
   margin: 5px;
+  text-decoration: none;
+  text-align: center;
 }
 
 .form2_text1 {
@@ -85,4 +88,5 @@ a {
   position: absolute;
   top: 20px;
   right: 20px;
+  cursor: pointer;
 }
