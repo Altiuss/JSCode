@@ -1,0 +1,29 @@
+body {
+	overflow: hidden;
+	background-color: rgb(26, 3, 3);
+}
+
+#rahmen_blau {
+	display: flex;
+	position: absolute;
+	box-sizing: border-box;
+	align-items: center;
+	justify-content: center;
+	top: 5.73%;
+	left: 5.95%;
+	width: 87.80%;
+	height: 43.55%;
+	z-index: 9;
+	color: rgb(246, 52, 52);
+	overflow: hidden;
+	background-color: rgb(29, 20, 184);
+	border: solid rgb(115, 248, 94) 11px;
+	border-radius: 44px;
+	box-shadow: 17px 17px 17px rgba(0, 0, 0, 0.3);
+	font-family: "Arial Black", Helvetica, sans-serif;
+	font-size: 6.37vw;
+	padding: 0px;
+	margin: 0px;
+	user-select: none;
+}
+

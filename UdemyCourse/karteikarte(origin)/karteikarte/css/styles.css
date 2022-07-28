@@ -1,0 +1,64 @@
+#karte {
+  position: absolute;
+  left: 15%;
+  top: 15%;
+  width: 70%;
+  height: 70%;
+  background-color: rgb(136, 176, 230);
+  border-radius: 30px;
+  border: 1px black solid;
+  box-shadow: 10px 10px 10px rgb(184, 184, 184);
+}
+
+.eingabe {
+  position: absolute;
+  left: 40%;
+  width: 50%;
+  height: 5%;
+  border-radius: 50px;
+  font-size: 2vw;
+  padding-left: 10px;
+}
+
+#name {
+  top: 15%;
+}
+
+#telefon {
+  top: 30%;
+}
+
+.label {
+  position: absolute;
+  left: 43%;
+  width: 50%;
+  height: 5%;
+  font-size: 1.6vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#name_label {
+  top: 9.5%;
+}
+#telefon_label {
+  top: 24.5%;
+}
+
+#passbild {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 17%;
+  height: auto;
+  border-radius: 20px;
+}
+
+#kommentar {
+  position: absolute;
+  left: 10%;
+  top: 60%;
+  width: 80%;
+  height: 30%;
+  padding: 1% ;
+  font-size: 1.5vw;
+}
