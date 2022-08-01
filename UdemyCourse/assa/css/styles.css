@@ -1,0 +1,61 @@
+body {
+	overflow: hidden;
+	background-color: rgb(20, 235, 152);
+}
+
+.class1 {
+	display: flex;
+	position: absolute;
+	box-sizing: border-box;
+	align-items: center;
+	justify-content: center;
+	width: 20.00%;
+	height: 20.00%;
+	z-index: 9;
+	color: rgb(0, 0, 0);
+	overflow: hidden;
+	background-color: rgb(255, 255, 255);
+	border: solid rgb(0, 0, 0) 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2.83vw;
+	
+
+	
+}
+
+#div1 {
+	top: 7.87%;
+	left: 10.70%;
+}
+
+#div2 {
+	top: 7.87%;
+	left: 10.70%;
+}
+
+#div3 {
+	top: 8.40%;
+	left: 67.34%;
+}
+
+#div4 {
+	top: 7.33%;
+	left: 41.67%;
+	border-radius: 44px;
+}
+
+#img5 {
+	display: block;
+	position: absolute;
+	top: 174.01%;
+	left: -135.33%;
+	width: 15.00%;
+	height: 29.98%;
+	z-index: 9;
+	color: rgb(0, 0, 0);
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0);
+	border: solid rgb(0, 0, 0) 0px;
+	margin: 0px;
+}
+
