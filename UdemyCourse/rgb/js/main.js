@@ -1,7 +1,12 @@
-$("#rot").css("background-color", "black");
+blauausblenden();
 
-$("#rot").css("width", "50%");
+function rotausblenden() {
+  $("#rot").fadeOut(1000);
+  $("#rot").fadeIn(1000);
+}
+rotausblenden();
 
-$("#rot").css("border-radius", "0%");
-
-$("#gruen").css("height", "1%");
+function blauausblenden() {
+  $("#blau").fadeOut(1000);
+  $("#blau").fadeIn(1000);
+}

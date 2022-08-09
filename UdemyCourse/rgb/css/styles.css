@@ -1,45 +1,44 @@
 body {
-	overflow: hidden;
-	background-color: rgb(177, 185, 49);
+  overflow: hidden;
+  background-color: rgb(177, 185, 49);
 }
 
 .box {
-	display: flex;
-	position: absolute;
-	box-sizing: border-box;
-	align-items: center;
-	justify-content: center;
-	height: 20.00%;
-	z-index: 9;
-	color: rgb(0, 0, 0);
-	overflow: hidden;
-	border: solid rgb(0, 0, 0) 0px;
-	border-radius: 26px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 2.83vw;
-	padding: 0px;
-	margin: 0px;
-	user-select: none;
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+  z-index: 9;
+  color: rgb(0, 0, 0);
+  overflow: hidden;
+  border: solid rgb(0, 0, 0) 0px;
+  border-radius: 26px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.83vw;
+  padding: 0px;
+  margin: 0px;
+  user-select: none;
 }
 
 #blau {
-	top: 51.43%;
-	left: 36.06%;
-	width: 16.07%;
-	background-color: rgb(16, 112, 185);
+  top: 51.43%;
+  left: 36.06%;
+  width: 16.07%;
+  background-color: rgb(16, 112, 185);
 }
 
 #gruen {
-	top: 24.90%;
-	left: 65.89%;
-	width: 16.91%;
-	background-color: rgb(20, 211, 25);
+  top: 24.9%;
+  left: 65.89%;
+  width: 16.91%;
+  background-color: rgb(20, 211, 25);
 }
 
 #rot {
-	top: 24.22%;
-	left: 4.62%;
-	width: 15.23%;
-	background-color: rgb(211, 20, 20);
+  top: 24.22%;
+  left: 4.62%;
+  width: 15.23%;
+  background-color: rgb(211, 20, 20);
 }
-
