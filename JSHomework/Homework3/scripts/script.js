@@ -43,15 +43,31 @@ console.log(returnMathMax1(7, 7));
 //  и выводящую в консоль отсортированные числа по убыванию.
 //  Используйте условный оператор.
 
-function sortNumber(a, b, c) {
+let sortNumber = (a, b, c) => {
   if (a > b && a > c) {
-    return a;
-  } else if (b > a && b > c) {
-    return b;
-  } else {
-    return c;
+    if (b > c) {
+      console.log(a, b, c);
+    } else {
+      console.log(a, c, b);
+    }
   }
-}
+
+  if (b > a && b > c) {
+    if (a > c) {
+      console.log(b, a, c);
+    } else {
+      console.log(b, c, a);
+    }
+  }
+
+  if (c > a && c > b) {
+    if (a > b) {
+      console.log(c, a, b);
+    } else {
+      console.log(c, b, a);
+    }
+  }
+};
 
 console.log(sortNumber(509, 117, 99));
 
