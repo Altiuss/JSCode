@@ -86,30 +86,49 @@
 // console.log(sortNumber1(777, 3544, 33));
 // console.log(sortNumber1(7, 3, 3398977));
 
-let sortNumber = (a, b, c) => {
-  if (a > b && a > c) {
-    if (b > c) {
-      console.log(a, b, c);
-    } else {
-      console.log(a, c, b);
-    }
-  }
+// let sortNumber = (a, b, c) => {
+//   if (a >= b && a >= c) {
+//     if (b >= c) {
+//       console.log(a, b, c);
+//     } else {
+//       console.log(a, c, b);
+//     }
+//   }
 
-  if (b > a && b > c) {
-    if (a > c) {
-      console.log(b, a, c);
-    } else {
-      console.log(b, c, a);
-    }
-  }
+//   if (b >= a && b >= c) {
+//     if (a >= c) {
+//       console.log(b, a, c);
+//     } else {
+//       console.log(b, c, a);
+//     }
+//   }
 
-  if (c > a && c > b) {
-    if (a > b) {
-      console.log(c, a, b);
-    } else {
-      console.log(c, b, a);
-    }
+//   if (c >= a && c >= b) {
+//     if (a >= b) {
+//       console.log(c, a, b);
+//     } else {
+//       console.log(c, b, a);
+//     }
+//   }
+// };
+
+// console.log(sortNumber(509, 117, 509));
+
+let maxOfFive = (a, b, c, d, e) => {
+  let max = a;
+  if (b > a) {
+    max = b;
   }
+  if (max < c) {
+    max = c;
+  }
+  if (max < d) {
+    max = d;
+  }
+  if (max < e) {
+    max = e;
+  }
+  return max;
 };
 
-console.log(sortNumber(509, 117, 99));
+console.log(maxOfFive(1, 2, 90, 4, 5));
