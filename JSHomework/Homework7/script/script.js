@@ -69,36 +69,6 @@ let trueArray = array.filter((el) => {
   }
 });
 
-let finishArray = trueArray.map((el) => {
-  for (let i = 0; i < trueArray.lengt; i++) {
-    if (el[i] === true) {
-      return "true";
-    } else {
-      return el[i];
-    }
-  }
-});
+let finishArray = trueArray.map((el) => `${el[0]} ${el[1]}`);
 
-for (let i = 0; i < finishArray.length; i++) {
-  console.log(finishArray[i]);
-}
-console.log(finishArray.toString());
-
-// console.log(array.toString([], []));
-
-// let arrTrue = array.filter((el) => {
-//   for (let i = 0; i < el.length; i++) {
-//     console.log(array[i]);
-// for (let j = 0; j < [i].length - 1; j++) {
-//   console.log(j);
-//   if (j === true) {
-//     return true;
-//   }
-// }
-//   }
-// });
-// console.log(arrTrue.toString());
-
-// for (let i = 0; i < arrTrue.length; i++) {
-//   console.log(i);
-// }
+console.log(finishArray);
