@@ -94,15 +94,15 @@ const customers = [
   },
 ];
 
-let newCustumers = customers.map( cust => {
-    return { 
-        id: customers.id,
-        name: customers.name,
-        order_total: customers.orders
-        .reduce((prev,val)) => prev + val)
-}
-}
-  
-);
+// реализомать новый массив, в котором будут поля
+// id, name, order_total
+
+const newCustumers = customers.map((val) => {
+  return {
+    id: val.id,
+    name: val.name,
+    order_total: val.orders.reduce((prev, val) => prev + val)
+  };
+});
+
 console.log(newCustumers);
-console.log(customers);
