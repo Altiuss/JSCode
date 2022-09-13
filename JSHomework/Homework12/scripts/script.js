@@ -5,17 +5,30 @@
 
 const root = document.querySelector(".root");
 
-const product_1 = document.querySelector(".product_1");
+const div = document.createElement("div");
+const title = document.createElement("h1");
+const art = document.createElement("p");
+const price = document.createElement("p");
 
-console.log(root);
+art.innerText = "567844";
+title.innerText = "Salami";
+price.innerText = "32,48 Eur/kg";
+div.append(title, art, price);
+root.append(div);
 
-const product = document.createElement("div");
+title.style.margin = "20px 60px";
+title.style.fontSize = "70px";
+art.style.margin = " 100px 0 10px 0";
+price.style.color = "red";
+price.style.fontSize = " 30px";
 
-product.innerText = "Bear";
-product.style.backgroundColor = "green";
-product.style.width = "300px";
-product.style.height = "200px";
-product.style.border = "black solid 2px";
-product.style.borderRadius = "20px";
-product.style.alignItems = "center";
-product.style.root.append(product);
+div.style.width = "400px";
+div.style.height = "300px";
+div.style.backgroundColor = "gray";
+div.style.border = "3px solid black";
+div.style.borderRadius = "20px";
+div.style.display = "Flex";
+div.style.flexDirection = "column";
+div.style.alignItems = "center";
+div.style.margin = "50px";
+div.style.padding = "10px";
