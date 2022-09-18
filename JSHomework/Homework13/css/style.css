@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.karte {
+  background-color: aqua;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  width: 250px;
+  margin: 5px;
+}
+
+.root {
+  display: grid;
+  grid-template: (2fr, 2fr);
+  grid-template-columns: (2fr);
+  grid-template-rows: (2fr);
+  gap: 20px;
+}
+
+.root_progr {
+  border: 2px solid black;
+  position: relative;
+  height: 20px;
+  width: 200px;
+  background-color: aliceblue;
+  margin: 5px 0 0 0;
+  border-radius: 5px;
+}
+
+.progr_green {
+  position: absolute;
+  background-color: green;
+
+  height: 100%;
+}
+.prog_bar {
+  position: absolute;
+  left: 45%;
+}
