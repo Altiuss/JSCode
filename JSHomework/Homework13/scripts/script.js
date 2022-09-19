@@ -70,12 +70,18 @@ workers.forEach((el) => {
   selary_elem.innerText = "Selary: " + el.rate * el.days;
   progr_text.innerText = el.progress + "%";
   foto.src = el.photo;
+  foto.alt = "photo";
 
   progr_text.classList.add("prog_bar");
   card.classList.add("karte");
   progr.classList.add("root_progr");
   progr_progr.classList.add("progr_green");
   progr_progr.style.width = `${el.progress}%`;
+  if (el.progress < 20) {
+    progr_progr.style.backgroundColor = "red";
+  } else if (el.progress > 20 && el.progress < 50) {
+    progr_progr.style.backgroundColor = "Yellow";
+  }
 
   progr.append(progr_progr, progr_text);
   card.append(

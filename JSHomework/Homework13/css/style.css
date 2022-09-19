@@ -9,15 +9,13 @@
   border: 3px solid black;
   border-radius: 20px;
   padding: 20px;
-  width: 250px;
+  width: 200px;
   margin: 5px;
 }
 
 .root {
   display: grid;
-  grid-template: (2fr, 2fr);
-  grid-template-columns: (2fr);
-  grid-template-rows: (2fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
@@ -25,7 +23,7 @@
   border: 2px solid black;
   position: relative;
   height: 20px;
-  width: 200px;
+  width: 150px;
   background-color: aliceblue;
   margin: 5px 0 0 0;
   border-radius: 5px;
@@ -39,5 +37,7 @@
 }
 .prog_bar {
   position: absolute;
-  left: 45%;
+
+  text-align: center;
+  width: 100%;
 }
