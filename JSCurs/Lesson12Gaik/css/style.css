@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(29, 27, 27);
+}
+
+input {
+  height: 30px;
+  font-size: 20px;
+}
+
+#products {
+  background-color: aqua;
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid black;
+}
