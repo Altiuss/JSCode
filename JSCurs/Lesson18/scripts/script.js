@@ -65,3 +65,30 @@ let fotos_index = 0;
 img_slider.addEventListener("click", (event) => {
   event.target.src = foto[fotos_index++ % foto.length];
 });
+//Создать генератор бросаемых костей
+
+const gameBtn = document.querySelector(".gameBtn");
+const gameRezult = document.querySelector(".gameRezult");
+
+const getNum = () => Math.round(Math.random() * 5 + 1);
+gameBtn.addEventListener(
+  "click",
+  () => (gameRezult.innerText = `${getNum()} X ${getNum()}`)
+);
+
+// Создать описанный в форме элемент
+
+const formColor = document.querySelector(".formColor");
+const addForm = document.querySelector(".addForm");
+
+addForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const { type, content, color } = event.target;
+
+  const elem = document.createElement(type.value);
+  elem.innerText = content.value;
+  // elem.style.color = color.value;
+  elem.style.backgroundColor = color.value;
+
+  formColor.append(elem);
+});
