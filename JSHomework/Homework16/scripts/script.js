@@ -15,8 +15,10 @@ const render = (json) => {
     titleElem.innerText = title;
     completedElem.innerText = `Status: ${completed}`;
     if (completed === false) {
+      completedElem.innerText = `Status: not done`;
       card.style.backgroundColor = "grey";
     } else {
+      completedElem.innerText = `Status: done`;
       card.style.backgroundColor = "green";
     }
 
