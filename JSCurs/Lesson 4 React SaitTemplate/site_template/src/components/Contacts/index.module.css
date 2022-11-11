@@ -1,0 +1,38 @@
+.contacts_section {
+  background-image: url("media/Rectangle.png");
+  color: white;
+  background-size: cover;
+  background-position: center;
+  padding: 122px 0 140px 0;
+}
+
+.contacts_info h2 {
+  color: white;
+  margin-bottom: 60px;
+}
+
+.contacts_info {
+  width: 445px;
+}
+
+.contacts_block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.phone_and_mail {
+  margin-top: 80px;
+  display: flex;
+}
+
+/* .contacts_info p:nth-child(3) {
+  color: rgb(11, 134, 134);
+  margin: 30px;
+}
+
+.contacts_info p:nth-child(4) {
+  color: brown;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 17px;
+} */
