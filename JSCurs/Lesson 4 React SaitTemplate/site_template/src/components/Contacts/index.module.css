@@ -23,6 +23,7 @@
 .phone_and_mail {
   margin-top: 80px;
   display: flex;
+  gap: 40px;
 }
 
 /* .contacts_info p:nth-child(3) {
