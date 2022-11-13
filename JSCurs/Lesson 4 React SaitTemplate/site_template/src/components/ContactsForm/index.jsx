@@ -27,7 +27,7 @@ export default function ContactsForm() {
         ></textarea>
         <hr />
       </div>
-      <button>Отправить сообщение</button>
+      <button>Отправить сообщение </button>
     </div>
   );
 }
