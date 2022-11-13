@@ -1,0 +1,56 @@
+.root {
+  position: relative;
+}
+
+.roof {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.roof input {
+  width: 255px;
+  background-color: transparent;
+  margin: 15px 0;
+  outline: none;
+  font-size: 21px;
+  border: none;
+}
+
+.roof hr {
+  width: 255px;
+  color: #ffffff;
+}
+
+.message_div {
+  width: 540px;
+}
+
+.message_div p {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 35px 0 10px 0;
+}
+
+.message_div textarea {
+  background-color: transparent;
+  font-size: 21px;
+  border: none;
+  resize: none;
+  height: 120px;
+}
+
+.message_div hr {
+  width: 540px;
+}
+
+button {
+  background-color: #005fa3;
+  width: 270px;
+  height: 70px;
+  color: white;
+  font-size: 18px;
+  font-weight: 400px;
+  margin-top: 50px;
+  margin-left: 265px;
+}
