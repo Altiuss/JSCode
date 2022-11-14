@@ -1,5 +1,6 @@
 import React from "react";
 import ContactsForm from "../ContactsForm";
+import ContactForm1 from "../ContactForm1";
 import s from "./index.module.css";
 import { MailOutlined } from "@ant-design/icons";
 
@@ -19,7 +20,8 @@ export default function Contacts() {
             </p>
           </div>
         </div>
-        <ContactsForm />
+        {/* <ContactsForm /> */}
+        <ContactForm1 />
       </div>
     </section>
   );
