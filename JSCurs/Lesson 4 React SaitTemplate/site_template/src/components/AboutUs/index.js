@@ -5,13 +5,13 @@ import s from "./index.module.css";
 
 export default function AbautUs() {
   return (
-    <section className={["wrapper", s.abaut_us_section].join(" ")}>
+    <section className={["wrapper", s.about_us_section].join(" ")}>
       <div>
         <p className="subheader">О нас</p>
         <h2>
           Компания <span className={s.acent}> ИвановПром</span>
         </h2>
-        <p className={s.abaut_us_info}>
+        <p className={s.about_us_info}>
           Lorem Ipsum - это текст-"рыба", часто используемый в печати и
           вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
           латинице с начала XVI века. В то время некий безымянный печатник
