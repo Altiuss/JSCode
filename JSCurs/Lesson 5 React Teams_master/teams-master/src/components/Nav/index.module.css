@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav_menu {
+  height: 100px;
+  background-color: blue;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_menu a {
+  color: azure;
+  font-size: 20px;
+  margin: 0 20px;
+  text-decoration: none;
+}
