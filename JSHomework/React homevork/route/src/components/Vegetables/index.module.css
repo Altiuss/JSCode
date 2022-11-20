@@ -1,0 +1,25 @@
+.vegetables {
+  border: 3px solid palevioletred;
+  border-radius: 20px;
+  width: 220px;
+  height: 125px;
+  padding: 10px;
+  background-color: azure;
+  font-weight: 900;
+  font-size: 20px;
+}
+.vegetables div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.vegetables p {
+  padding: 0 0 3px 0;
+}
+
+.veg_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}

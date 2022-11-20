@@ -1,0 +1,17 @@
+.nav {
+  background-color: blue;
+  height: 100px;
+  width: 100%;
+  color: azure;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav a {
+  padding: 0 20px;
+  cursor: pointer;
+  color: azure;
+  text-decoration: none;
+}
