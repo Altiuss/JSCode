@@ -7,27 +7,9 @@ import Nav from "../Nav";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
-  vegetables.sort(function (a, b) {
-    if (a.price > b.price) {
-      return 1;
-    }
-    if (a.price < b.price) {
-      return -1;
-    }
+  vegetables.sort((a, b) => b.price - a.price);
 
-    return 0;
-  });
-
-  fruits.sort(function (a, b) {
-    if (a.price > b.price) {
-      return 1;
-    }
-    if (a.price < b.price) {
-      return -1;
-    }
-
-    return 0;
-  });
+  fruits.sort((a, b) => b.price - a.price);
 
   return (
     <div>
