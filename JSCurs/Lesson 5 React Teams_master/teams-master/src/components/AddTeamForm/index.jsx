@@ -7,15 +7,15 @@ export default function AddTeamForm() {
 
   const submit_form = (event) => {
     event.preventDefault();
-    const { team } = event.target;
-    addTeam(team.value);
-    team.value = "";
+    const { team_title } = event.target;
+    addTeam(team_title.value);
+    team_title.value = "";
   };
 
   return (
-    <form action="#" className={s.add_team_form} onSubmit={submit_form}>
+    <form className={s.add_team_form} onSubmit={submit_form}>
       <p>Add team</p>
-      <input type="text" name="team" placeholder="Team`s title" />
+      <input type="text" name="team_title" placeholder="Team's title" />
       <button>Add team</button>
     </form>
   );
