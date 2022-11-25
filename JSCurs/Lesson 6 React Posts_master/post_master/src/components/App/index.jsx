@@ -12,14 +12,22 @@ export default function App() {
     target_card.like = !target_card.like;
 
     setPosts([...posts]);
-  }
+  };
 
-  const add_post = {title_value, text_value} => {
-
-  }
+  const add_post = (title, text) =>
+    setPosts([
+      ...posts,
+      {
+        id: Date.now(),
+        title, //title: title
+        text, //text: text
+        like: false,
+        comments: [],
+      },
+    ]);
 
   return (
-    <Context.Provider value={{ posts, change_like }}>
+    <Context.Provider value={{ posts, change_like, add_post }}>
       <AddPostForm />
       <PostContainer />
     </Context.Provider>
