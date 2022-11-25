@@ -26,8 +26,18 @@ export default function App() {
       },
     ]);
 
+  const add_comment = (post_id, text) => {
+    const comment = {
+      id: Date.now(),
+      comment: text,
+    };
+    const target_post = posts.find((el) => el.id === post_id);
+    target_post.comments.push(comment);
+    setPosts([...posts]);
+  };
+
   return (
-    <Context.Provider value={{ posts, change_like, add_post }}>
+    <Context.Provider value={{ posts, change_like, add_post, add_comment }}>
       <AddPostForm />
       <PostContainer />
     </Context.Provider>
