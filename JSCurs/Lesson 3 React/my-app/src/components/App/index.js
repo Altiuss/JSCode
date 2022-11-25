@@ -1,11 +1,20 @@
 import CardsContainer from "../CardsContainer";
 import { words } from "./../data/words";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Triggers from "../Triggers";
 import AddPostForm from "../AddPostForm";
 
 function App() {
   const [cards, setCards] = useState(words);
+
+  useEffect(() => {
+    const res = JSON.parse(localStorage.getItem("cards"));
+    setCards(res);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("cards", JSON.stringify(cards));
+  }, [cards]);
 
   const change_to_eng = () => {
     setCards(
