@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import UsersContainer from "../../components/UsersContainer";
 
 export default function UsersPage() {
   return (
@@ -7,7 +8,7 @@ export default function UsersPage() {
       <Link to="/">
         <button>Main</button>
       </Link>
-      Users page
+      <UsersContainer />
     </div>
   );
 }

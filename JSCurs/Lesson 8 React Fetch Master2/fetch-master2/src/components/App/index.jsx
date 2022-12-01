@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
 import { getProducts } from "../../requests/products";
 import { getUsers } from "../../requests/users";
-import ProductsContainer from "../ProductsContainer";
 import { Context } from "../../context";
 import MainPage from "../../pages/MainPage";
 import ProductsPage from "../../pages/ProductsPage";
 import UsersPage from "../../pages/UsersPage";
 import { Routes, Route } from "react-router-dom";
-import '../../style.css'
+import "../../style.css";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -20,7 +19,7 @@ function App() {
 
   return (
     <div>
-      <Context.Provider value={{ products }}>
+      <Context.Provider value={{ products, users }}>
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/products" element={<ProductsPage />} />

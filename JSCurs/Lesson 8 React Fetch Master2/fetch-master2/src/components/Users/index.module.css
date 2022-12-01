@@ -1,0 +1,9 @@
+.user_style {
+  border: 2px solid gray;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.user_style img {
+  max-width: 200px;
+}
