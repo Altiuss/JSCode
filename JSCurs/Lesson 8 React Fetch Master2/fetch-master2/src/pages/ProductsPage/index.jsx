@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import AddProductForm from "../../components/AddProductForm";
 import ProductsContainer from "../../components/ProductsContainer";
 
 export default function ProductsPage() {
@@ -8,6 +9,7 @@ export default function ProductsPage() {
       <Link to="/">
         <button>Main</button>
       </Link>
+      <AddProductForm />
       <ProductsContainer />
     </div>
   );

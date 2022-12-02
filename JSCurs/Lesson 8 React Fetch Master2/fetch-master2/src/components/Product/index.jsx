@@ -4,9 +4,9 @@ import s from "./index.module.css";
 export default function Product({ title, price, description }) {
   return (
     <div className={s.product_card}>
-      <p>{title}</p>
-      <p>{price}</p>
-      <p>{description}</p>
+      <p>Title: {title}</p>
+      <p>Price: {price}</p>
+      <p>Description: {description}</p>
     </div>
   );
 }
