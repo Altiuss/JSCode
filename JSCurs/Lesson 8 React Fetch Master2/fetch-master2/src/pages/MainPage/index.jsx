@@ -10,6 +10,9 @@ export default function MainPage() {
       <Link to="/users">
         <button>Users</button>
       </Link>
+      <Link to="/toDo">
+        <button>Todo</button>
+      </Link>
       Main page
     </div>
   );

@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import s from "./index.module.css";
 import { addProduct } from "../../requests/products";
 import { Context } from "../../context";
+import Slider from "react-slick";
 
 export default function AddProductForm() {
   const { createNewProduct } = useContext(Context);

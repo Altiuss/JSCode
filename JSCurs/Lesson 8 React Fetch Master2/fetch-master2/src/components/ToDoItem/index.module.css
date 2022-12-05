@@ -1,0 +1,10 @@
+.todoitem_style {
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px;
+  max-width: 200px;
+}
+
+.todoitem_style p {
+  padding: 10px;
+}
