@@ -5,11 +5,15 @@ import { useForm } from "react-hook-form";
 export default function ContactForm1() {
   const {
     register,
+    reset,
     handleSubmit,
     formState: { errors },
   } = useForm({ mode: "onBlur" });
 
-  const submit = (data) => console.log(data);
+  const submit = (data) => {
+    console.log(data);
+    reset();
+  };
 
   const firstnameRegister = register("firstname", {
     required: "firstname is requaired",
@@ -40,7 +44,6 @@ export default function ContactForm1() {
         </label>
         <label>
           <p>
-            {" "}
             Фамилия
             {errors.lastname && (
               <p className={s.err2}>{errors.lastname?.message}</p>
