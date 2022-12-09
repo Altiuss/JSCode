@@ -1,0 +1,22 @@
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 24px;
+  margin: 4px 0;
+  border-radius: 55px;
+
+  width: 356px;
+  height: 48px;
+}
+
+.yellow{
+    background: #FFE44D;
+    border: 1px solid white;
+}
+
+.white{
+    background: white;
+    border: 1px solid rgb(239, 232, 232);
+}

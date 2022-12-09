@@ -1,9 +1,11 @@
 import FormExamle from "./components/FormExamle";
+import FormItem from "./components/FormItem";
 
 function App() {
   return (
     <div>
-      <FormExamle />
+      {/* <FormExamle /> */}
+      <FormItem />
     </div>
   );
 }
