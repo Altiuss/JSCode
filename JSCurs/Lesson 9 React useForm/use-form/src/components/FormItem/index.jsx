@@ -3,9 +3,17 @@ import Button from "../Button";
 import Input from "../Input";
 import { useForm } from "react-hook-form";
 import s from "./index.module.css";
-import {CloseOutlined} from '@ant-design/icons'
+import { CloseOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 
-export default function FormItem() {
+export default function FormItem({
+  title,
+  button,
+  info_text,
+  info_text2,
+  form_type,
+  link_url
+}) {
   const { register, handleSubmit } = useForm();
 
   const submit = (data) => console.log(data);
@@ -15,24 +23,33 @@ export default function FormItem() {
 
   return (
     <form className={s.form_item} onSubmit={handleSubmit(submit)}>
-    <CloseOutlined  className={s.cross}/>
-      <p className={s.form_title}>Registration</p>
+      {/* <CloseOutlined className={s.cross} /> */}
+      <p className={s.form_title}>{title}</p>
+
+      <p className={s.form_descr}>{info_text2}</p>
+
       <Input type="text" name="email" placeholder="Email" {...emailRegister} />
-      <Input
-        type="text"
-        name="password"
-        placeholder="Password"
-        {...passwordRegister}
-      />
-      <p className={s.form_descr}>
-        By registering on the site, you agree to our Rules and Privacy Policy
-        and agree to receive newsletters
-      </p>
-      <Button color="yellow">Registration</Button>
-      <Button color="white">Login</Button>
-      {/* <Button color="black">Login</Button>
-      <Button color="blue">Login</Button>
-      <Button color="pink">Login</Button> */}
+      {["registration", "login"].includes(form_type) ? (
+        <Input
+          type="text"
+          name="password"
+          placeholder="Password"
+          {...passwordRegister}
+        />
+      ) : (
+        ""
+      )}
+
+      <p className={s.form_descr}>{info_text}</p>
+      <Button color="yellow">{button.submit}</Button>
+
+      {
+        ["registracion", "login"].includes(form_type)
+         ? <Link to={link_url} style={{textDecoration: 'none'}}>
+           <Button color="white">{button.redirect}</Button>
+           </Link> 
+         : ""
+      }
     </form>
   );
 }
