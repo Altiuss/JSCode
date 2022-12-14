@@ -50,7 +50,7 @@ export default function Modal({ modal, setModal }) {
                   "Для получения временного пароля необходимо ввести email, указанный при регистрации."
                 }
                 form_type={"send"}
-                link_url={'/registration_form'}
+                link_url={'/reset_password'}
               />
             }
           />

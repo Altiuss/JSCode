@@ -12,11 +12,15 @@ export default function FormItem({
   info_text,
   info_text2,
   form_type,
-  link_url
-}) {
-  const { register, handleSubmit } = useForm();
+  link_url,
 
-  const submit = (data) => console.log(data);
+}) {
+  const { register, handleSubmit, reset } = useForm();
+
+  const submit = (data) => {
+    console.log(data);
+    reset();
+  };
 
   const emailRegister = register("email");
   const passwordRegister = register("password");
@@ -39,17 +43,25 @@ export default function FormItem({
       ) : (
         ""
       )}
+      {form_type === "login" ? (
+        <Link to="/reset_password">
+          <p className={[s.form_descr, s.form_descr_link].join(" ")}>
+            {info_text}
+          </p>
+        </Link>
+      ) : (
+        <p className={s.form_descr}>{info_text}</p>
+      )}
 
-      <p className={s.form_descr}>{info_text}</p>
       <Button color="yellow">{button.submit}</Button>
 
-      {
-        ["registracion", "login"].includes(form_type)
-         ? <Link to={link_url} style={{textDecoration: 'none'}}>
-           <Button color="white">{button.redirect}</Button>
-           </Link> 
-         : ""
-      }
+      {["registration", "login"].includes(form_type) ? (
+        <Link to={link_url} style={{ textDecoration: "none" }}>
+          <Button color="white">{button.redirect}</Button>
+        </Link>
+      ) : (
+        ""
+      )}
     </form>
   );
 }

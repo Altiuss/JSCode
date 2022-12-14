@@ -12,7 +12,7 @@ function App() {
     <div>
       <Link to="/registration_form" style={{ textDecoration: "none" }}>
         <Button color={"yellow"} onClick={() => setModal(true)}>
-          Open modal Window{" "}
+          Open modal Window
         </Button>
       </Link>
       <Modal modal={modal} setModal={setModal} />
