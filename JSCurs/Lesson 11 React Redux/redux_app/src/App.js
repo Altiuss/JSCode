@@ -1,10 +1,12 @@
-
-
+import LanguageCards from "./components/LanguageCards";
+import Products from "./components/Products";
 
 function App() {
   return (
     <div>
-      Ok
+      <Products />
+      <br /><br />
+      <LanguageCards />
     </div>
   );
 }
