@@ -23,6 +23,9 @@ const dispatch = useDispatch()
     description.value = "";
   };
 
+
+
+
   return (
     <form onSubmit={submit} className={s.add_posts_form}>
       <input type="text" name="title" placeholder="Title" />
