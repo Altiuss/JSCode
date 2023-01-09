@@ -1,0 +1,17 @@
+.comment_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(16, 222, 222);
+  border-bottom: 1px dashed black;
+  margin: 5px;
+}
+
+.trash {
+  cursor: pointer;
+  
+}
+
+.trash:hover {
+  color: red;
+}
