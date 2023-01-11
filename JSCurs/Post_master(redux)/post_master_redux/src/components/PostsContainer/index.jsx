@@ -1,20 +1,16 @@
-import React, {useContext} from 'react'
-import { Context } from '../../context'
-
-import Post from '../Post'
-
-
+import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import Post from "../Post";
 
 export default function PostsContainer() {
-
-    const {posts} = useContext(Context)
+  
+  const state = useSelector((state) => state.posts);
 
   return (
     <div>
-    {
-posts.map(el => <Post key={el.id} {...el} />)
-    }
-  
-        </div>
-  )
+      {state.map((el) => (
+        <Post key={el.id} {...el} />
+      ))}
+    </div>
+  );
 }

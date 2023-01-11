@@ -1,14 +1,22 @@
-import React, { useContext } from "react";
+import React from "react";
 import s from "./index.module.css";
-import { Context } from "../../context";
+import { addPost } from "../../store/reducers/postReducer";
+import { useDispatch } from "react-redux";
 
 export default function AddPostForm() {
-  const { add_post } = useContext(Context);
+  const dispatch = useDispatch();
 
   const submit = (event) => {
     event.preventDefault();
-    const { title, text } = event.target;
-    add_post(title.value, text.value);
+    const [title, text] = event.target;
+    dispatch(
+      addPost({
+        title: title.value,
+        text: text.value,
+        like: false,
+        comments: []
+      })
+    );
     title.value = "";
     text.value = "";
   };

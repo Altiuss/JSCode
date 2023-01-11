@@ -1,13 +1,19 @@
-import React, {useContext} from "react";
-import { Context } from "../../context";
+import React from "react";
+import { addComment } from "../../store/reducers/postReducer";
+import { useDispatch } from "react-redux";
 
 export default function AddCommentForm({post_id}) {
-const {add_comment} = useContext(Context)
+
+const dispatch = useDispatch()
 
   const submit = (event) => {
     event.preventDefault();
     const { comment } = event.target;
-    add_comment(post_id, comment.value);
+    dispatch(addComment({
+      post_id,
+      comment: comment.value
+    }));
+
     comment.value = "";
   };
 
