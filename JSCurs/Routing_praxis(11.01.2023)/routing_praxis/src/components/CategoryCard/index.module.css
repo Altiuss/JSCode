@@ -1,0 +1,20 @@
+.category_card_style {
+  border: 1px solid black;
+  border-radius: 10px;
+  color: rgb(161, 219, 240);
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  font-weight: 900;
+  background-color: rgb(27, 29, 29);
+}
+
+.category_card_style:hover a{
+  color: red;
+  background-color: black;
+}
+
+.category_card_style a{
+  text-decoration: none;
+}

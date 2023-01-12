@@ -1,0 +1,16 @@
+.categories_page {
+  display: flex;
+
+}
+
+.categories_div {
+  background-color: rgb(40, 37, 37);
+  width: max-content;
+}
+
+.cat_page_img img {
+  width: 100%;
+ 
+
+  
+}
