@@ -4,15 +4,15 @@ import CategoryCard from "../../components/CategoryCard";
 import s from "./index.module.css";
 
 
-export default function CategoriesPage() {
-
-
+export default function CategoriesPage({category}) {
   const [categories, setCategories] = useState([]);
+  
 
-
- useEffect(() => {
+  useEffect(() => {
     getCategories(setCategories);
   }, []);
+ 
+  
 
   return (
     <div className={s.categories_page}>
@@ -22,7 +22,7 @@ export default function CategoriesPage() {
         ))}
       </div>
       <div className={s.cat_page_img}>
-    
+        
       </div>
     </div>
   );

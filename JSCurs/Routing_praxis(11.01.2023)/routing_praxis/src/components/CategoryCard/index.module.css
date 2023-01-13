@@ -10,9 +10,15 @@
   background-color: rgb(27, 29, 29);
 }
 
+
+.category_card_style a{
+  color: rgb(161, 219, 240);
+ 
+}
+
 .category_card_style:hover a{
   color: red;
-  background-color: black;
+ 
 }
 
 .category_card_style a{
