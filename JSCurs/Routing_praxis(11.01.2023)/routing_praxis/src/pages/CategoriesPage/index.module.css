@@ -1,16 +1,18 @@
 .categories_page {
   display: flex;
-
 }
 
 .categories_div {
   background-color: rgb(40, 37, 37);
-  width: max-content;
 }
 
-.cat_page_img img {
+.cat_page_img{
   width: 100%;
  
+  /* background-color: blueviolet; */
+  /* background-image: url("media/com.jpg"); */
+}
 
-  
+.cat_page_img img{
+height: 100%;
 }
