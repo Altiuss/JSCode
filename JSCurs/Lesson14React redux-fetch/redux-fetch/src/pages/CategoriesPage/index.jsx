@@ -12,8 +12,6 @@ export default function CategoriesPage() {
     dispatch(load_categories);
   }, []);
 
-  console.log(categories);
-
   return (
     <div className={s.categories_page}>
       <h2>The best store of the best things</h2>
