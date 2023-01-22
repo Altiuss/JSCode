@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
 }
 
 .wrapper {
@@ -10,5 +11,6 @@
 }
 
 main {
+ 
   min-height: 750px;
 }
