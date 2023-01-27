@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { load_product } from "../../requests/product_req";
+import { addToCart } from "../../store/reducers/cartReducer";
 import s from "./index.module.css";
 
 export default function ProductsDescrPage() {
@@ -11,9 +12,12 @@ export default function ProductsDescrPage() {
 
   useEffect(() => {
     dispatch(load_product(id));
+
+
   });
   const { title, description, price, image } = product;
-  // console.log(product);
+ 
+  const add_to_cart = () => (dispatch(addToCart({id:+id, title,image, price})))
 
   return (
     <div className={s.product_descr}>
@@ -23,7 +27,7 @@ export default function ProductsDescrPage() {
         <p className={s.descr}>{description}</p>
         <p className={s.price}>
           <span>Price:</span> {price}$
-          <button className={s.button}>Добавить в корзину</button>
+          <button onClick={add_to_cart} className={s.button}>Добавить в корзину</button>
         </p>
       </div>
     </div>
