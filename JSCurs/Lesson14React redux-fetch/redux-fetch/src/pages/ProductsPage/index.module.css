@@ -11,3 +11,42 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
   }
+
+  .search_form input {
+    width: 40%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin: 5px;
+  }
+
+  .search_form button {
+    width: 20%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    background-color: #ccc;
+  }
+
+  .search_form button:hover {
+    background-color: #34495e;
+    color:white
+  }
+
+  .sort_lelect{
+    width: 60%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin: 5px;
+  }
+
+  .sorting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+  }

@@ -9,6 +9,8 @@ export default function CartPage() {
   const dispatch = useDispatch();
   const clear_cart = () => dispatch(clearCart());
 
+  const total = (cart.reduce((prev, {price, count}) => prev + price * count, 0)).toFixed(2);
+
   console.log(cart);
 
   return (
@@ -20,7 +22,7 @@ export default function CartPage() {
         }
       </div>
       <div className={s.total_container}>
-        <h2>Итого:</h2>
+        <h2>Итого:{total}</h2>
         <button onClick={clear_cart}>Очистить корзину</button>
       </div>
     </div>
