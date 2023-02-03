@@ -1,0 +1,36 @@
+.cart_card_container {
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.cart_card_container img {
+  width: 33px;
+  height: 50px;
+  background-color: rgb(187, 237, 237);
+}
+
+.pluss_minus {
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+#one {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  width: 23px;
+  height: 30px;
+}
+
+#two {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 23px;
+  height: 30px;
+}
