@@ -1,0 +1,8 @@
+make index.js
+init project npm init
+init git
+added expressJS npm i express
+created .gitignore
+create in packege.json "start": "node index.js"
+created nodemon   npm i -D nodemon 
+ chang script "start": "node index.js" to  "start": "nodemon index.js"
