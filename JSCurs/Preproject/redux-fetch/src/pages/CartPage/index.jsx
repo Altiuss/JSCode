@@ -17,7 +17,7 @@ export default function CartPage() {
     <div className={s.root}>
       <div className={s.carts_container_style}>
         {cart.length === 0
-         ? <p>The cart is empty ...</p>
+         ? <p>The cart is empty ....</p>
          :<div>{ cart.map((el) => (<CartCard key={el.id} {...el} />))}</div>
         }
       </div>
