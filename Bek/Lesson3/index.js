@@ -2,8 +2,10 @@ import express from 'express';
 import goodsRouter from './routes/goods.js';
 import shopsRouter from './routes/shops.js';
 import cartRouter from './routes/cart.js';
+import authRouter from './routes/auth.js';
 import cookieParser from 'cookie-parser';
 import session from 'express-session';
+import './database/index.js'
 
 
 
@@ -24,7 +26,7 @@ app.use(session({
 
 
 
-
+app.use("/auth", authRouter)
 app.use("/cart", cartRouter)
 app.use("/goods", goodsRouter)
 app.use("/shops", shopsRouter)
