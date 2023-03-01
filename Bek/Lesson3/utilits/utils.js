@@ -8,7 +8,7 @@ export const hashPassword = password => {
  return bcrypt.hashSync(password, salt);
 };
 
- export const comparePassword = (password, hash) => {};
+ export const comparePassword = (password, hash) => bcrypt.compareSync(password, hash);
 
 
 
