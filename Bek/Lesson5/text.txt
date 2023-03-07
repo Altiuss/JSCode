@@ -1,0 +1,4 @@
+npm i bcrypt express-session mongoose
+npm i -D nodemon  // for development -D locale
+v server reg npm i cors
+```
