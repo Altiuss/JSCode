@@ -1,0 +1,6 @@
+Added sequelize
+npm i sequelize
+
+Added  driver for dialect
+
+npm i sequelize mysql2
