@@ -20,8 +20,9 @@ saveUninitialized: true
 }));
 
 app.use(cors({
-  origin: '*',              // '*' allows all origins
-  credentials: true,
+  origin: 'http://localhost:3000',           // указиваем разрешоных доменов
+  credentials: true,                             // указиваем что куки будут передаваться
+  // saveUninitialized: false,                
 }));
 
 
