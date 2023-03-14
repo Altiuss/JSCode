@@ -2,8 +2,9 @@ import Sequelize from 'sequelize'
 import {password} from './../password.js'
 
 
-console.log(password)
-const sequelize = new Sequelize('facebook', 'root', password,{
+
+
+export const sequelize = new Sequelize('facebook', 'root', password,{
     dialect: 'mysql',
     port: 3306,
     host: 'localhost',
@@ -27,4 +28,3 @@ start();
 
 
 
-export default sequelize
